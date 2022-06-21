@@ -1,0 +1,45 @@
+<section class="login-block">
+    <div class="container-fluid">
+       <div class="row">
+          <div class="col-sm-12">
+             <form class="md-float-material form-material">
+                <div class="auth-box card">
+                   <div class="card-block">
+                      <div class="row">
+                         <div class="d-flex justify-content-center mb-3 pb-1">
+                            <img src="/assets/fanhub-logo.jpg">
+                         </div>
+                         <div class="col-md-12">
+                            <h3 class="text-center heading" >Entre agora para o FanHub e consulte o clima da sua região!</h3>
+                         </div>
+                      </div>
+                      <br>
+                      <div class="or-container">
+                         <div class="line-separator"></div>
+                         <div class="line-separator"></div>
+                      </div>
+                      <br>
+                      <div class="row">
+                         <div class="col-sm-12 d-flex justify-content-center">
+                            <a class="btn btn-lg btn-google btn-block text-uppercase btn-outline" (click)="onGoogleLogin()">
+                              <div [ngSwitch]="googleLoginButtonLoading">
+                                 <div *ngSwitchCase="true">
+                                    <div class="spinner-border text-primary" role="status"></div>
+                                 </div>
+                                 <div *ngSwitchCase="false">
+                                    <div class=""><img src="/assets/google-logo.png"> Entrar com conta Google</div>
+                                 </div>
+                             </div>
+                            </a>
+                         </div>
+                      </div>
+                      <br><br><br>
+                   </div>
+                </div>
+             </form>
+          </div>
+       </div>
+    </div>
+  </section>
+  
+  
